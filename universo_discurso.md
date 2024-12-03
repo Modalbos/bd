@@ -1,6 +1,3 @@
-¡Claro! Aquí tienes el **Universo de Discurso** en formato Markdown para tu modelo de tienda de ropa y accesorios:
-
-```markdown
 # Universo de Discurso: Tienda de Ropa y Accesorios
 
 ## Descripción General
