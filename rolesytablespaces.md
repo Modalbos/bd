@@ -1,6 +1,6 @@
 # Tienda de Ropa y Accesorios - Roles, Tablespaces y Administración
+![Diagrama sin título drawio](https://github.com/user-attachments/assets/224993ed-dc94-436f-8b99-64e62b59e2e1)
 
-![concetos usuarios drawio](https://github.com/user-attachments/assets/3d9193cc-b928-4da6-bd94-b973bb5ed970)
 
 ## Tablespaces Asignados a Cada Rol
 ### 1. **DBA (Administrador de Base de Datos)**
