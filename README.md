@@ -1,6 +1,6 @@
 # Tienda de Ropa y Accesorios - Diseño de Base de Datos
 
-![Texto alternativo de la imagen](https://www.fujitsu.com/es/Images/oracle-db580x224_tcm77-40873.jpg)
+![ora](https://www.fujitsu.com/es/Images/oracle-db580x224_tcm77-40873.jpg)
 
 ## Resumen
 
