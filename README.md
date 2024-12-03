@@ -19,3 +19,11 @@ Este diseño tiene como objetivo ofrecer una solución sencilla pero eficaz para
 ---
 
 Este proyecto se implementará utilizando **Oracle SQL** para crear las tablas, definir relaciones y mantener la integridad de los datos, garantizando una operación eficiente y segura de la base de datos.
+# Indice
+[Ver el archivo LICENSE](universo_discurso.md)
+
+[Ver el archivo LICENSE](rolesytablespaces.md)
+
+[Ver el archivo LICENSE](tablas.md)
+
+[Ver el archivo LICENSE](instrucciones_crear_tablas.md)
