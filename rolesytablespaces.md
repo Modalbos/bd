@@ -51,26 +51,27 @@
 ## Ejemplo de Configuración SQL para Tablespaces
 
 ### Crear los tablespace:
-```sql
-CREATE TABLESPACE users
-    DATAFILE 'users_data.dbf' SIZE 500M
-    AUTOEXTEND ON NEXT 100M MAXSIZE 5G
-    EXTENT MANAGEMENT LOCAL;
 
-CREATE TEMPORARY TABLESPACE temp
-    TEMPFILE 'temp_data.dbf' SIZE 200M
-    AUTOEXTEND ON NEXT 50M MAXSIZE 2G
-    EXTENT MANAGEMENT LOCAL;
-```
 
 ### Crear Usuarios y Asignar Tablespaces:
 ### DBA:
 
-```sql
-CREATE USER dba_user IDENTIFIED BY password 
-    DEFAULT TABLESPACE system
-    TEMPORARY TABLESPACE temp;
-```
+- conectamos como sys
+
+![imagen](https://github.com/user-attachments/assets/7c23c2b6-ea0f-44b4-a33b-c6ffedc0752b)
+
+  
+- creamos la tabla usuario
+
+
+![imagen](https://github.com/user-attachments/assets/ff2bea94-a8ca-4046-85f3-1dee1b422d5a)
+
+-creamos el usuario administrador ildefonso
+
+
+![imagen](https://github.com/user-attachments/assets/8c1d01a2-44db-4a0e-a39f-6229f66456e6)
+
+
 ```sql
 CREATE USER dev_user IDENTIFIED BY password 
     DEFAULT TABLESPACE users
