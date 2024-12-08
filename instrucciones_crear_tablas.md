@@ -1,6 +1,3 @@
-¡Por supuesto! Aquí tienes los **comandos SQL** para crear las tablas en el modelo de datos de tu tienda de ropa y accesorios, presentados en formato **Markdown**:
-
-```markdown
 # Comandos SQL para Crear las Tablas: Tienda de Ropa y Accesorios
 
 ## 1. Crear la tabla `Ropa`
