@@ -1,6 +1,3 @@
-Aquí tienes el modelo actualizado en **Markdown** para que puedas copiarlo y organizarlo fácilmente:
-
-```markdown
 # Modelo Relacional: Tienda de Ropa y Accesorios
 
 ## Tablas
