@@ -1,91 +1,63 @@
 # Comandos SQL para Crear las Tablas: Tienda de Ropa y Accesorios
 
 ## 1. Crear la tabla `Ropa`
-```sql
-CREATE TABLE Ropa (
-    ID_Ropa INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre VARCHAR(100),
-    Talla VARCHAR(10),
-    Color VARCHAR(50),
-    Precio DECIMAL(10, 2),
-    Categoria VARCHAR(50)
-);
-```
+conectado como ildefonso
+
+![imagen](https://github.com/user-attachments/assets/845f394a-18ef-46e1-90bc-c7c56a662a77)
+
+![imagen](https://github.com/user-attachments/assets/8c7806e2-b312-4138-8fa4-d8332820f9f0)
+
 
 ---
 
 ## 2. Crear la tabla `Accesorios`
-```sql
-CREATE TABLE Accesorios (
-    ID_Accesorio INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre VARCHAR(100),
-    Tipo VARCHAR(50),
-    Color VARCHAR(50),
-    Precio DECIMAL(10, 2)
-);
-```
+
+
+![imagen](https://github.com/user-attachments/assets/bd39d8e8-b7c2-46d5-bb41-d3044da2d4c7)
+
 
 ---
 
 ## 3. Crear la tabla `Clientes`
-```sql
-CREATE TABLE Clientes (
-    ID_Cliente INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre VARCHAR(100),
-    Correo VARCHAR(100),
-    Telefono VARCHAR(20)
-);
-```
+
+![imagen](https://github.com/user-attachments/assets/4f1e7833-9b59-4971-a6f6-25a6faa49f4d)
+
+ ![imagen](https://github.com/user-attachments/assets/b47fe230-f904-4d4c-88a7-cf99865589d3)
+
+ ![imagen](https://github.com/user-attachments/assets/2c5b1c40-451c-4f78-b8ce-a88132e6d1d6)
+
+
 
 ---
 
 ## 4. Crear la tabla `Empleados`
-```sql
-CREATE TABLE Empleados (
-    ID_Empleado INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre VARCHAR(100),
-    Cargo VARCHAR(50)
-);
-```
+
+
+![imagen](https://github.com/user-attachments/assets/6aef08b5-0e19-47c8-8634-5baccedc1435)
+
+![imagen](https://github.com/user-attachments/assets/8597ca7f-94d9-47b5-a489-a7f3dd6e0c97)
+
+
 
 ---
 
 ## 5. Crear la tabla `Ventas`
-```sql
-CREATE TABLE Ventas (
-    ID_Venta INT AUTO_INCREMENT PRIMARY KEY,
-    Fecha DATE,
-    ID_Cliente INT,
-    ID_Empleado INT,
-    Total DECIMAL(10, 2),
-    FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente),
-    FOREIGN KEY (ID_Empleado) REFERENCES Empleados(ID_Empleado)
-);
-```
+
+-este lo hice dos veces y la primera me fallo por sintaxis asi que copie y pegue por eso esta todo en una linea
+
+![imagen](https://github.com/user-attachments/assets/c82b860b-0ccb-457f-9ce2-1d19b7c00629)
+
+![imagen](https://github.com/user-attachments/assets/b6869d13-0fcd-40eb-a701-6ff28b75c1f0)
+
+![imagen](https://github.com/user-attachments/assets/f2bfb17f-bfbc-4e88-b60a-a72db590188a)
+
 
 ---
 
 ## 6. Crear la tabla `Detalle_Ventas`
-```sql
-CREATE TABLE Detalle_Ventas (
-    ID_Detalle INT AUTO_INCREMENT PRIMARY KEY,
-    ID_Venta INT,
-    ID_Producto INT,
-    Tipo_Producto VARCHAR(50),  -- 'Ropa' o 'Accesorio'
-    Cantidad INT,
-    Precio_Unitario DECIMAL(10, 2),
-    FOREIGN KEY (ID_Venta) REFERENCES Ventas(ID_Venta)
-);
-```
+
+![imagen](https://github.com/user-attachments/assets/d670998a-17da-4931-bfe1-e4fff676a3de)
+
 
 ---
 
-## Notas Importantes:
-
-- **Tipo de datos**:
-    - `INT` es usado para identificadores numéricos (claves primarias o foráneas).
-    - `VARCHAR(100)` es usado para cadenas de texto de longitud variable (nombres, correos).
-    - `DECIMAL(10, 2)` es usado para almacenar precios, con 2 decimales de precisión.
-    - `DATE` es usado para almacenar fechas (por ejemplo, la fecha de la venta).
-
-- **Claves Foráneas**: En las tablas `Ventas` y `Detalle_Ventas`, se definen relaciones con las tablas `Clientes`, `Empleados` y `Ventas`, asegurando la integridad referencial entre las tablas.
