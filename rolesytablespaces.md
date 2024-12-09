@@ -61,28 +61,38 @@ GRANT SELECT, INSERT ON Detalle_Ventas TO C##Operador;
 
 
 ---
+## crear usuarios
 
-### 2. **Desarrollador**
-- **Tablespaces utilizados**:
-  - **USERS**:
-    - Contiene las tablas, vistas, procedimientos almacenados y otros objetos creados por el desarrollador.
-    - **Ejemplo de contenido**: Las tablas `Ropa`, `Accesorios`, `Clientes`, `Ventas` y `Detalle_Ventas`.
-- **Justificación**: 
-  - El desarrollador trabaja en `USERS` para implementar y probar los modelos de datos sin interferir con los metadatos del sistema.
+- ildefonso
+- Valery
+- Roberto
+
+  ![imagen](https://github.com/user-attachments/assets/9ddae0b1-660f-454d-8a85-1468578224ee)
+
+  ![imagen](https://github.com/user-attachments/assets/d7a17ca6-ecfd-49d5-893f-b71a46d6cdc8)
+
+
+
+---
+## tablespaces
+
+### 1. **Desarrollador**
+
+![imagen](https://github.com/user-attachments/assets/c991e851-2fee-4041-8f44-cef68000f2cf)
 
 ---
 
-### 3. **Operador**
-- **Tablespaces utilizados**:
-  - **USERS**:
-    - Acceso restringido a las tablas relevantes, como `Clientes`, `Ventas` y `Detalle_Ventas`, para insertar datos y realizar consultas.
-  - **TEMP**:
-    - Utilizado indirectamente para ejecutar consultas temporales como búsquedas específicas o reportes.
-- **Justificación**: 
-  - El operador interactúa con los datos reales de la base de datos pero no tiene permisos de desarrollo o administración.
+### 2. **Operador**
+
+![imagen](https://github.com/user-attachments/assets/3ae63a8e-e229-410b-8e6a-b279e7659741)
 
 ---
 
+### 3. **Temporal**
+
+![imagen](https://github.com/user-attachments/assets/961927c0-0578-4e53-895e-96e8fb184e12)
+
+---
 ## Resumen en Tabla:
 
 | **Rol**          | **Tablespaces Asignados**                          | **Contenido en el Tablespace**                                            |
