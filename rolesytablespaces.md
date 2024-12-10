@@ -93,39 +93,17 @@ GRANT SELECT, INSERT ON Detalle_Ventas TO C##Operador;
 ![imagen](https://github.com/user-attachments/assets/961927c0-0578-4e53-895e-96e8fb184e12)
 
 ---
-## Resumen en Tabla:
+## mover tablespaces
 
-| **Rol**          | **Tablespaces Asignados**                          | **Contenido en el Tablespace**                                            |
-|-------------------|----------------------------------------------------|----------------------------------------------------------------------------|
-| **DBA**           | SYSTEM, UNDO, TEMP                                | Metadatos, transacciones, operaciones temporales.                         |
-| **Desarrollador** | USERS                                              | Tablas de la tienda (`Ropa`, `Accesorios`, `Clientes`, etc.), vistas, SPs.|
-| **Operador**      | USERS (limitado), TEMP                             | Acceso restringido a tablas operativas (`Clientes`, `Ventas`, etc.).      |
-
----
-
-## Ejemplo de Configuración SQL para Tablespaces
-
-### Crear los tablespace:
-
-
-### Crear Usuarios y Asignar Tablespaces:
-### 
-
+![imagen](https://github.com/user-attachments/assets/940f08b3-abc0-4dc5-b2c9-f18806ed0bcd)
 
 ```sql
+ALTER USER C##Valery DEFAULT TABLESPACE desarrollador_ts;
 
-```
-```sql
+ALTER USER C##Roberto DEFAULT TABLESPACE operador_ts;
 
-```
-### Asignar Roles y Permisos:
-### DBA:
-```sql
-GRANT DBA TO dba_user;
-```
-```sql
-GRANT CREATE TABLE, SELECT, INSERT, UPDATE TO dev_user;
-```
-```sql
-GRANT SELECT, INSERT ON Clientes TO operator_user;
-```
+ALTER USER C##Valery TEMPORARY TABLESPACE temp_ts;
+
+ALTER USER C##ILDEFONSO TEMPORARY TABLESPACE temp_ts;
+
+ALTER USER C##Roberto TEMPORARY TABLESPACE temp_ts;
