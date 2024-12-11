@@ -9,7 +9,7 @@
 | Nombre      | VARCHAR(100) |       |
 | Talla       | VARCHAR(10)  |       |
 | Color       | VARCHAR(50)  |       |
-| Precio      | NUMERIC      |       |
+| Precio      | DECIMAL      |       |
 | Categoria   | VARCHAR(50)  |       |
 
 ---
@@ -18,10 +18,9 @@
 | Campo         | Tipo         | Clave |
 |---------------|--------------|-------|
 | ID_Accesorio  | NUMBER       | PK    |
-| Nombre        | VARCHAR(100) |       |
 | Tipo          | VARCHAR(50)  |       |
 | Color         | VARCHAR(50)  |       |
-| Precio        | NUMERIC      |       |
+| Precio        | NUMBER       |       |
 
 ---
 
@@ -49,9 +48,9 @@
 |---------------|--------------|-------|
 | ID_Venta      | NUMBER       | PK    |
 | Fecha         | DATE         |       |
-| ID_Cliente    | NUMERIC      | FK (Clientes.ID_Cliente) |
-| ID_Empleado   | NUMERIC      | FK (Empleados.ID_Empleado) |
-| Total         | NUMERIC      |       |
+| ID_Cliente    | NUMBER       | FK (Clientes.ID_Cliente) |
+| ID_Empleado   | NUMBER       | FK (Empleados.ID_Empleado) |
+| Total         | NUMBER       |       |
 
 ---
 
@@ -62,8 +61,8 @@
 | ID_Venta      | NUMBER       | FK (Ventas.ID_Venta) |
 | ID_Producto   | NUMBER       |       |
 | Tipo_Producto | VARCHAR(50)  | Indica si es "Ropa" o "Accesorio" |
-| Cantidad      | NUMeric      |       |
-| Precio_Unitario | NUMERIC    |       |
+| Cantidad      | NUMBER       |       |
+| Precio_Unitario | NUMBER    |       |
 
 ---
 
