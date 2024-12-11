@@ -85,6 +85,3 @@
    - Relación: **N:M**
    - Campo genérico: `Detalle_Ventas.ID_Producto`
    - Distinción por: `Detalle_Ventas.Tipo_Producto` (que indica si es Ropa o Accesorio)
-```
-
-Este formato se puede copiar y pegar directamente en un editor de Markdown o en una herramienta como **GitHub** para documentar el modelo. 😊
